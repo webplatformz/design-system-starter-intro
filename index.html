@@ -1,204 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Intro to the Design System Starter</title>
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/Zuehlke/zuehlke-reveal-package@f42658c99dec0812d754d935263a70b93b81f54b/release/index.css">
+  <meta charset="UTF-8">
+  <title>Intro to the Design System Starter</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Zuehlke/zuehlke-reveal-package@f42658c99dec0812d754d935263a70b93b81f54b/release/index.css">
 </head>
 <body class="reveal">
 <div class="slides">
 
-    <section class="title-slide">
-        <h1>Intro to the «Design System Starter»</h1>
-        <h2>Webplatform Topic Team @ Zühlke Day April 2024</h2>
-        <h3>An introduction to the Design System Starter project for a better setup with a collaborative process between
-            UX and Development.</h3>
-    </section>
+  <section class="title-slide">
+    <h1>Intro to the «Design System Starter»</h1>
+    <h2>Webplatform Topic Team @ Zühlke Day April 2024</h2>
+    <h3>An introduction to the Design System Starter project for a better setup with a collaborative process between
+      UX and Development.</h3>
+  </section>
 
-    <section class="agenda">
-        <h2>Agenda</h2>
-        <div class="wrapper">
-            <div>
-                <span class="number">01</span>
-                <span class="title counter">Purpose & Goals</span>
-            </div>
-            <div>
-                <span class="number">02</span>
-                <span class="title counter">Technical</span>
-            </div>
-            <div>
-                <span class="number">03</span>
-                <span class="title counter">UX-Dev Cycle</span>
-            </div>
-            <div>
-                <span class="number">04</span>
-                <span class="title counter">Project Reality</span>
-            </div>
-            <div>
-                <span class="number">05</span>
-                <span class="title counter">Outlook & Vision</span>
-            </div>
-        </div>
-    </section>
+  <section class="agenda">
+    <h2>Agenda</h2>
+    <div class="wrapper">
+      <div>
+        <span class="number">01</span>
+        <span class="title counter">Purpose & Goals</span>
+      </div>
+      <div>
+        <span class="number">02</span>
+        <span class="title counter">Technical</span>
+      </div>
+      <div>
+        <span class="number">03</span>
+        <span class="title counter">UX-Dev Cycle</span>
+      </div>
+      <div>
+        <span class="number">04</span>
+        <span class="title counter">Project Reality</span>
+      </div>
+      <div>
+        <span class="number">05</span>
+        <span class="title counter">Outlook & Vision</span>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <section class="subtitle-slide">
-            <h2>Purpose & Goals</h2>
-        </section>
-
-        <section>
-            <h2>The problem</h2>
-            <p>Most of our customers have a need for a custom design system…</p>
-        </section>
+  <section>
+    <section class="subtitle-slide">
+      <h2>Purpose & Goals</h2>
     </section>
 
     <section>
-        <section class="subtitle-slide">
-            <h2>Technical</h2>
-        </section>
+      <h2>What is it technically</h2>
+      <p class="fragment">Web Components Library</p>
+      <p class="fragment">React Wrapper</p>
+      <p class="fragment">Tailwind Preset</p>
+      <p class="fragment tip" style="text-align: center">Open Source</p>
+    </section>
+    <section data-transition="fade-out">
+      <h2>Another Components Library?</h2>
+    </section>
+    <section data-transition="fade-in">
+      <h2>Not just any Components Library</h2>
+      <p class="fragment">Template for new projects</p>
+      <p class="fragment">Storybook</p>
+      <p class="fragment">Figma Format</p>
+      <p class="fragment">Chromatic</p>
+    </section>
+    <section data-transition="fade-in">
+      <h2>What else</h2>
+      <p class="fragment">Framework agnostic</p>
+      <p class="fragment" style="white-space: nowrap">How to work with the UX team <b>(UX-Dev Cycle)</b></p>
+      <p class="fragment">Mindset</p>
+    </section>
+    <section>
+      <h2>Goals</h2>
+      <p class="fragment">Increase collaboration between Devs and Designers</p>
+      <p class="fragment">Offer a starting point for new projects</p>
+    </section>
+  </section>
 
-        <section>
-            <h2>The problem</h2>
-            <p>Most of our customers have a need for a custom design system…</p>
-        </section>
+  <section>
+    <section class="subtitle-slide">
+      <h2>Technical</h2>
+    </section>
+
+    <section class="exercise">
+      <h2>Demo</h2>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h2>UX-Dev Cycle</h2>
     </section>
 
     <section>
-        <section class="subtitle-slide">
-            <h2>UX-Dev Cycle</h2>
-        </section>
-
-        <section>
-            <h2>The Problem</h2>
-            <p>Often, the process looks something like this:</p>
-            <ul>
-                <li class="fragment">UX designer designs something</li>
-                <li class="fragment">Web developer develops something</li>
-            </ul>
-            <p class="fragment tip">linear workflow with no feedback</p>
-        </section>
-
-        <section>
-            <h2>The Result</h2>
-            <ul>
-                <li>design and implementation drift apart</li>
-                <li>little understanding between UX and devs</li>
-                <li>inconsistent UI, visual regression</li>
-            </ul>
-        </section>
-
-        <section class="statement-slide">
-            <h1>our vision is that</h1>
-            <h2>UX and Devs work closely together</h2>
-        </section>
-
-        <section>
-            <h2>Proposed UX-Dev Cycle</h2>
-            <p>To develop and improve the Design System:</p>
-            <ol>
-                <li class="fragment">UX designer uses design token to define component</li>
-                <li class="fragment">developer uses design token to implement component</li>
-                <li class="fragment">developer gives technical feedback to UX designer</li>
-                <li class="fragment">other developers review the component code</li>
-                <li class="fragment">UX designers review the visual snapshot diffs</li>
-                <li class="fragment">UX designers test implemented component</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Advantages</h2>
-            <ul>
-                <li>ensure correct visual implementation</li>
-                <li>prevent visual regression</li>
-                <li>UX designers stay in the loop</li>
-                <li>regular interactions between UX and devs (both learn from each other)</li>
-                <li>design and implementation are in sync</li>
-            </ul>
-        </section>
+      <h2>The Problem</h2>
+      <p>Often, the process looks something like this:</p>
+      <ul>
+        <li class="fragment">UX designer designs something</li>
+        <li class="fragment">Web developer develops something</li>
+      </ul>
+      <p class="fragment tip">linear workflow with no feedback</p>
     </section>
 
     <section>
-        <section class="subtitle-slide">
-            <h2>Project Reality</h2>
-        </section>
+      <h2>The Result</h2>
+      <ul>
+        <li>design and implementation drift apart</li>
+        <li>little understanding between UX and devs</li>
+        <li>inconsistent UI, visual regression</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Setup</h2>
-            <ul>
-                <li>React app uses the Design System React wrappers and Tailwind preset</li>
-                <li>Design System gets published to the internal registry upon tagging commit with a version</li>
-                <li>Chromatic is run on the main branch and changes regularly get checked by UX</li>
-                <li>local linking of Web Components from the React app possible for development (using <a
-                        href="https://docs.npmjs.com/cli/v10/commands/npm-link">npm link</a>)
-                </li>
-                <li>merged stories get tested by UX on the test environment</li>
-            </ul>
-        </section>
-
-        <section class="exercise">
-            <h2>Demo</h2>
-        </section>
-
-        <section>
-            <h2>Experience: the good stuff</h2>
-            <ul>
-                <li>setup easy to understand and use</li>
-                <li>consistent styling in components and throughout the app</li>
-                <li>clear communication between development and UX</li>
-                <li>accountability to both development and UX to be aligned with each other and with the defined token
-                </li>
-                <li>low effort to build simple parts of the UI</li>
-                <li>easy to add, extend and adapt components</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Experience: the not quite as great stuff</h2>
-            <ul>
-                <li>missing changelog</li>
-                <li>hard to find/prevent side effects from changes sometimes in the app itself</li>
-                <li>added round-trip time to implement a story if changes in Web Components are needed</li>
-                <li>Chromatic only on the main branch after merging as we only use the free tier, which has a limit on
-                    the snapshots per month
-                </li>
-            </ul>
-        </section>
+    <section class="statement-slide">
+      <h1>our vision is that</h1>
+      <h2>UX and Devs work closely together</h2>
     </section>
 
     <section>
-        <section class="subtitle-slide">
-            <h2>Vision & Outlook</h2>
-        </section>
-
-        <section class="statement-slide">
-            <h1>Our Vision</h1>
-            <h2>A circular workflow with UX Designers and Software Engineers</h2>
-        </section>
-
-        <section>
-            <h2>What do we want to do next? 🚀</h2>
-            <ul>
-                <li>comprehensive documentation</li>
-                <li>example applications in React and Angular (and more?)</li>
-                <li>full infrastructure with Storybook, Chromatic, …</li>
-                <li>update to new Figma template/variables</li>
-            </ul>
-        </section>
-
-        <section class="exercise">
-            <h2>Figma Updates and Outlook</h2>
-            <p>An update on what UX has been up to recently and what's coming next for the Design System Starter.</p>
-        </section>
+      <h2>Proposed UX-Dev Cycle</h2>
+      <p>To develop and improve the Design System:</p>
+      <ol>
+        <li class="fragment">UX designer uses design token to define component</li>
+        <li class="fragment">developer uses design token to implement component</li>
+        <li class="fragment">developer gives technical feedback to UX designer</li>
+        <li class="fragment">other developers review the component code</li>
+        <li class="fragment">UX designers review the visual snapshot diffs</li>
+        <li class="fragment">UX designers test implemented component</li>
+      </ol>
     </section>
 
     <section>
-        <section class="break-slide">
-            <h1>Thank you for listening!</h1>
-            <h2>We're happy to talk more about the Design System Starter and don't hesitate to contact us if you're
-                interested to see more.</h2>
-        </section>
+      <h2>Advantages</h2>
+      <ul>
+        <li>ensure correct visual implementation</li>
+        <li>prevent visual regression</li>
+        <li>UX designers stay in the loop</li>
+        <li>regular interactions between UX and devs (both learn from each other)</li>
+        <li>design and implementation are in sync</li>
+      </ul>
     </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h2>Project Reality</h2>
+    </section>
+
+    <section>
+      <h2>Setup</h2>
+      <ul>
+        <li>React app uses the Design System React wrappers and Tailwind preset</li>
+        <li>Design System gets published to the internal registry upon tagging commit with a version</li>
+        <li>Chromatic is run on the main branch and changes regularly get checked by UX</li>
+        <li>local linking of Web Components from the React app possible for development (using <a
+            href="https://docs.npmjs.com/cli/v10/commands/npm-link">npm link</a>)
+        </li>
+        <li>merged stories get tested by UX on the test environment</li>
+      </ul>
+    </section>
+
+    <section class="exercise">
+      <h2>Demo</h2>
+    </section>
+
+    <section>
+      <h2>Experience: the good stuff</h2>
+      <ul>
+        <li>setup easy to understand and use</li>
+        <li>consistent styling in components and throughout the app</li>
+        <li>clear communication between development and UX</li>
+        <li>accountability to both development and UX to be aligned with each other and with the defined token
+        </li>
+        <li>low effort to build simple parts of the UI</li>
+        <li>easy to add, extend and adapt components</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience: the not quite as great stuff</h2>
+      <ul>
+        <li>missing changelog</li>
+        <li>hard to find/prevent side effects from changes sometimes in the app itself</li>
+        <li>added round-trip time to implement a story if changes in Web Components are needed</li>
+        <li>Chromatic only on the main branch after merging as we only use the free tier, which has a limit on
+          the snapshots per month
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h2>Vision & Outlook</h2>
+    </section>
+
+    <section class="statement-slide">
+      <h1>Our Vision and Mission</h1>
+      <h2>A circular workflow with UX Designers and Software Engineers</h2>
+    </section>
+
+    <section>
+      <h2>What do we want to do next? 🚀</h2>
+      <ul>
+        <li>comprehensive documentation</li>
+        <li>example applications in React and Angular (and more?)</li>
+        <li>full infrastructure with Storybook, Chromatic, …</li>
+        <li>update to new Figma template/variables</li>
+      </ul>
+    </section>
+
+    <section class="exercise">
+      <h2>Figma Updates and Outlook</h2>
+      <p>An update on what UX has been up to recently and what's coming next for the Design System Starter.</p>
+    </section>
+  </section>
+
+  <section>
+    <section class="break-slide">
+      <h1>Thank you for listening!</h1>
+      <h2>We're happy to talk more about the Design System Starter and don't hesitate to contact us if you're
+        interested to see more.</h2>
+    </section>
+  </section>
 
 </div>
 <script src="https://cdn.jsdelivr.net/gh/Zuehlke/zuehlke-reveal-package@f42658c99dec0812d754d935263a70b93b81f54b/release/index.js"></script>
