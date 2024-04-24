@@ -83,42 +83,40 @@
         <section>
             <h2>Setup</h2>
             <ul>
-                <li>UX Designers working with Figma using the defined tokens</li>
-                <li>Design System with <a href="https://lit.dev">Lit</a> & <a
-                        href="https://storybook.js.org">Storybook</a> using the Figma tokens
-                </li>
-                <li><a href="https://www.chromatic.com">Chromatic</a> for automatic visual tests</li>
-                <li>React app with dependencies to the WebComponents and the Tailwind config</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Processes</h2>
-            <ul>
-                <li>Design System gets published to the internal registry on tagging commit with a version</li>
-                <li>Chromatic is run on the main branch and changes get checked by UX</li>
-                <li>local linking of Web Components from the React app possible for development (<a
+                <li>React app uses the Design System React wrappers and Tailwind preset</li>
+                <li>Design System gets published to the internal registry upon tagging commit with a version</li>
+                <li>Chromatic is run on the main branch and changes regularly get checked by UX</li>
+                <li>local linking of Web Components from the React app possible for development (using <a
                         href="https://docs.npmjs.com/cli/v10/commands/npm-link">npm link</a>)
                 </li>
+                <li>merged stories get tested by UX on the test environment</li>
             </ul>
         </section>
 
         <section>
-            <h2>Experience</h2>
-            <div class="fragment">
-                <p>Good stuff:</p>
-                <ul>
-                    <li>setup easy to understand and use</li>
-                    <li>consistent styling, low effort to build simple parts of the UI</li>
-                </ul>
-            </div>
-            <div class="fragment">
-                <p>Not great stuff:</p>
-                <ul>
-                    <li>missing changelog</li>
-                    <li>hard to find/prevent side effects from changes sometimes in the app itself</li>
-                </ul>
-            </div>
+            <h2>Demo</h2>
+        </section>
+
+        <section>
+            <h2>Experience: the good stuff</h2>
+            <ul>
+                <li>setup easy to understand and use</li>
+                <li>consistent styling in components and throughout the app</li>
+                <li>clear communication between development and UX</li>
+                <li>accountability to both development and UX to be aligned with each other and with the defined token</li>
+                <li>low effort to build simple parts of the UI</li>
+                <li>easy to add, extend and adapt components</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience: the not quite as great stuff</h2>
+            <ul>
+                <li>missing changelog</li>
+                <li>hard to find/prevent side effects from changes sometimes in the app itself</li>
+                <li>added round-trip time to implement a story if changes in Web Components are needed</li>
+                <li>Chromatic only on the main branch after merging as we only use the free tier, which has a limit on the snapshots per month</li>
+            </ul>
         </section>
     </section>
 
