@@ -70,11 +70,21 @@
         </section>
 
         <section>
-            <h2>The problem</h2>
+            <h2>The Problem</h2>
             <p>Often, the process looks something like this:</p>
             <ul>
                 <li class="fragment">UX designer designs something</li>
                 <li class="fragment">Web developer develops something</li>
+            </ul>
+            <p class="fragment tip">linear workflow with no feedback</p>
+        </section>
+
+        <section>
+            <h2>The Result</h2>
+            <ul>
+                <li>design and implementation drift apart</li>
+                <li>little understanding between UX and devs</li>
+                <li>inconsistent UI, visual regression</li>
             </ul>
         </section>
 
@@ -87,12 +97,12 @@
             <h2>Proposed UX-Dev Cycle</h2>
             <p>To develop and improve the Design System:</p>
             <ol>
-                <li>UX designer uses design token to define component</li>
-                <li>developer uses design token to implement component</li>
-                <li>developer gives technical feedback to UX designer</li>
-                <li>other developers review the component code</li>
-                <li>UX designer reviews the visual snapshot testing</li>
-                <li>UX designer tests implemented component</li>
+                <li class="fragment">UX designer uses design token to define component</li>
+                <li class="fragment">developer uses design token to implement component</li>
+                <li class="fragment">developer gives technical feedback to UX designer</li>
+                <li class="fragment">other developers review the component code</li>
+                <li class="fragment">UX designers review the visual snapshot diffs</li>
+                <li class="fragment">UX designers test implemented component</li>
             </ol>
         </section>
 
@@ -136,7 +146,8 @@
                 <li>setup easy to understand and use</li>
                 <li>consistent styling in components and throughout the app</li>
                 <li>clear communication between development and UX</li>
-                <li>accountability to both development and UX to be aligned with each other and with the defined token</li>
+                <li>accountability to both development and UX to be aligned with each other and with the defined token
+                </li>
                 <li>low effort to build simple parts of the UI</li>
                 <li>easy to add, extend and adapt components</li>
             </ul>
@@ -148,7 +159,9 @@
                 <li>missing changelog</li>
                 <li>hard to find/prevent side effects from changes sometimes in the app itself</li>
                 <li>added round-trip time to implement a story if changes in Web Components are needed</li>
-                <li>Chromatic only on the main branch after merging as we only use the free tier, which has a limit on the snapshots per month</li>
+                <li>Chromatic only on the main branch after merging as we only use the free tier, which has a limit on
+                    the snapshots per month
+                </li>
             </ul>
         </section>
     </section>
